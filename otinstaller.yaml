@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/dnsrecon@sha256:0000000000000000000000000000000000000000000000000000000000000000
+  image: ghcr.io/osintverse-community/dnsrecon@sha256:9c912ede0a000f08396377e0e3b015634ad2d15fb4b41bc6f5f673d381623d3b
   platforms: [linux/amd64, linux/arm64]
   command: ["dnsrecon", "-d", "{domain}", "-t", "std"]
   output_format: text
