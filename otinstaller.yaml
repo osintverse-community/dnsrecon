@@ -3,7 +3,7 @@
 schema: 1
 name: dnsrecon
 namespace: osintverse-community
-version: 1.6.3
+version: 1.6.4
 summary: "Enumerates a domain's DNS: standard records, SRV services, zone transfer checks and DNSSEC"
 readme: README.md
 license: GPL-2.0
@@ -21,7 +21,7 @@ outputs:
 runtime:
   kind: docker
   # Filled in by the release workflow with the pushed image's digest.
-  image: ghcr.io/osintverse-community/dnsrecon@sha256:9c912ede0a000f08396377e0e3b015634ad2d15fb4b41bc6f5f673d381623d3b
+  image: ghcr.io/osintverse-community/dnsrecon@sha256:caa4cfcdf5a0612635a6007f32c6c062639d3fcbd53464637e6f7b8f1b4a61b0
   platforms: [linux/amd64, linux/arm64]
   command: ["dnsrecon", "-d", "{domain}", "-t", "std"]
   output_format: text
